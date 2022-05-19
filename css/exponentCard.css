@@ -141,6 +141,7 @@ a {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   margin: 24px 0 0 60px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
