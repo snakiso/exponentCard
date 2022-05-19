@@ -16,6 +16,7 @@ a {
 .exponent-card {
   max-width: 1300px;
   margin: 80px auto 120px auto;
+  padding: 0 20px 0 20px;
 }
 
 .exponent-card__title {
