@@ -1,0 +1,213 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  max-width: 2560px;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.exponent-card {
+  max-width: 1300px;
+  margin: 80px auto 120px auto;
+}
+
+.exponent-card__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  color: #1b75bb;
+  line-height: 48px;
+  max-width: 597px;
+  height: 48px;
+}
+
+.exponent-card__title:after {
+  content: '';
+  position: relative;
+  display: block;
+  background: #ED2424;
+  left: 0;
+  bottom: -14px;
+  height: 1px;
+  width: 120px;
+}
+
+.exponent-card__wrapper {
+  margin: 55px 0 0 60px;
+  max-width: 1240px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: -60px 44px #f2f2f2;
+          box-shadow: -60px 44px #f2f2f2;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "text center logo" "text center contacts";
+}
+
+.exponent-card__information {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: text;
+  padding: 40px;
+}
+
+.infomation__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 126px;
+  height: 41px;
+  border: 1px solid #1b75bb;
+  color: #1b75bb;
+}
+
+.information__text {
+  padding-top: 20px;
+  max-width: 676px;
+  line-height: 24px;
+}
+
+.information__center-line {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: center;
+  border-left: 1px solid #f2f2f2;
+  margin: 0 0px 0 -14px;
+}
+
+.information__logo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: logo;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.information__logo img {
+  padding: 24px 44px;
+}
+
+.information__contacts {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: contacts;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts__item a {
+  color: #1b75bb;
+}
+
+.contacts__item:not(:first-child) {
+  margin-top: 12px;
+}
+
+.contacts__item p {
+  color: #767676;
+  line-height: 24px;
+  margin: 24px 0 0 0;
+}
+
+.return-button {
+  width: 193px;
+  height: 41px;
+  border: none;
+  background-color: #1b75bb;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  margin: 24px 0 0 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .exponent-card {
+    max-width: 600px;
+  }
+  .exponent-card__title {
+    max-width: 262px;
+    height: 82px;
+    font-size: 32px;
+  }
+  .exponent-card__wrapper {
+    margin: 55px 0 0 0;
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "logo" 'number' 'text' 'contacts';
+    -webkit-box-shadow: 0px 60px 0px 24px #f2f2f2;
+            box-shadow: 0px 60px 0px 24px #f2f2f2;
+  }
+  .exponent-card__information {
+    padding: 12px 20px 0 20px;
+  }
+  .information__logo img {
+    width: 136px;
+    height: 65px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    padding: 10px 48px 10px 48px;
+  }
+  .infomation__number {
+    width: 90px;
+    height: 32px;
+  }
+  .information__text {
+    font-size: 12px;
+    line-height: 16.8px;
+  }
+  .information__contacts {
+    padding-left: 20px;
+  }
+  .contacts__item {
+    font-size: 12px;
+  }
+  .return-button {
+    width: 271px;
+    height: 41px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 23px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .exponent-card {
+    max-width: 272px;
+  }
+  .exponent-card__title {
+    max-width: 262px;
+    height: 82px;
+  }
+}
+/*# sourceMappingURL=exponentCard.css.map */

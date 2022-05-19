@@ -1,0 +1,139 @@
+
+body
+ font-family: 'Roboto', sans-serif
+ font-weight: 400
+ max-width: 2560px
+ margin: auto
+li
+ list-style: none 
+a
+ text-decoration: none
+.exponent-card
+ max-width: 1300px
+ margin: 80px auto 120px auto
+ padding: 0 20px 0 20px
+ &__title
+  text-transform: uppercase
+  font-weight: 700
+  font-size: 40px
+  color: rgba(27, 117, 187, 1)
+  line-height: 48px
+  max-width: 597px
+  height: 48px
+ &__title:after
+  content: ''
+  position: relative
+  display: block
+  background:  #ED2424
+  left: 0
+  bottom: -14px
+  height: 1px
+  width: 120px
+ &__wrapper
+  margin: 55px 0 0 60px
+  max-width: 1240px
+  background: #FFFFFF
+  border: 1px solid rgba(0, 0, 0, 0.12)
+  box-shadow: -60px 44px rgba(242, 242, 242, 1)
+  display: grid
+  grid-template-areas: "text center logo" "text center contacts"
+ &__information
+  grid-area: text
+  padding: 40px
+.infomation__number
+ display: flex
+ justify-content: center
+ align-items: center
+ width: 126px
+ height: 41px
+ border: 1px solid rgba(27, 117, 187, 1)
+ color: rgba(27, 117, 187, 1)
+.information__text
+ padding-top: 20px
+ max-width: 676px
+ line-height: 24px
+.information__center-line
+ grid-area: center
+ border-left: 1px solid rgba(242, 242, 242, 1) 
+ margin: 0 0px 0 -14px
+.information__right-block
+ 
+.information__logo
+ grid-area: logo
+ box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12)
+.information__logo img
+ padding: 24px 44px 
+.information__contacts
+ grid-area: contacts
+ margin: 0
+ padding: 0
+ display: flex
+ flex-direction: column
+.contacts__item a
+ color: rgba(27, 117, 187, 1)
+.contacts__item:not(:first-child)
+ margin-top: 12px
+.contacts__item p
+ color: rgba(118, 118, 118, 1)
+ line-height: 24px
+ margin: 24px 0 0 0
+.return-button
+ width: 193px
+ height: 41px
+ border: none
+ background-color: rgba(27, 117, 187, 1)
+ color: #FFFFFF
+ font-family: 'Roboto', sans-serif
+ text-transform: uppercase
+ margin: 24px 0 0 60px
+
+
+
+@media screen and (max-width: 768px)
+ .exponent-card
+  max-width: 600px
+  &__title
+    max-width: 262px
+    height: 82px
+    font-size: 32px
+  &__wrapper
+    margin: 55px 0 0 0
+    display: grid
+    grid-template-areas: "logo" 'number' 'text' 'contacts'
+    box-shadow: 0px 60px 0px 24px rgba(242, 242, 242, 1)
+  &__information
+    padding: 12px 20px 0 20px
+ .information__logo img
+   width: 136px
+   height: 65px
+   display: flex
+   margin: auto
+   padding: 10px 48px 10px 48px
+ .infomation__number
+   width: 90px
+   height: 32px  
+ .information__text
+   font-size: 12px 
+   line-height: 16.8px
+ .information__contacts
+   padding-left: 20px 
+ .contacts__item
+   font-size: 12px 
+ .return-button
+  width: 271px
+  height: 41px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 23px auto 0 auto
+
+                             
+
+
+
+@media screen and (max-width: 321px)
+ .exponent-card
+  max-width: 272px
+  &__title
+    max-width: 262px
+    height: 82px
