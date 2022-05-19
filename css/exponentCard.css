@@ -88,7 +88,8 @@ a {
   -ms-grid-column: 2;
   grid-area: center;
   border-left: 1px solid #f2f2f2;
-  margin: 0 0px 0 -14px;
+  margin: 0;
+  padding: 0 40px 0 0;
 }
 
 .information__logo {
@@ -96,6 +97,8 @@ a {
   -ms-grid-column: 3;
   grid-area: logo;
   margin: 40px 40px 0 0;
+  max-width: 404px;
+  max-height: 198px;
 }
 
 .information__logo img {
@@ -187,9 +190,10 @@ a {
   }
   .information__center-line {
     border-bottom: 1px solid #f2f2f2;
+    margin: 12px 20px 0 20px;
     margin-top: 12px;
-    width: 232px;
-    margin-left: 20px;
+    min-width: 232px;
+    padding: 0;
   }
   .information__contacts {
     padding-left: 20px;
