@@ -59,9 +59,10 @@ a
  
 .information__logo
  grid-area: logo
- box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12)
+ margin: 40px 40px 0 0 
 .information__logo img
- padding: 24px 44px 
+ box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12)
+ padding: 24px 44px
 .information__contacts
  grid-area: contacts
  margin: 0
@@ -72,7 +73,7 @@ a
  color: rgba(27, 117, 187, 1)
 .contacts__item:not(:first-child)
  margin-top: 12px
-.contacts__item p
+.contact__adress
  color: rgba(118, 118, 118, 1)
  line-height: 24px
  margin: 24px 0 0 0
@@ -99,10 +100,12 @@ a
   &__wrapper
     margin: 55px 0 0 0
     display: grid
-    grid-template-areas: "logo" 'number' 'text' 'contacts'
+    grid-template-areas: "logo" 'number' 'text' 'center' 'contacts'
     box-shadow: 0px 60px 0px 24px rgba(242, 242, 242, 1)
   &__information
-    padding: 12px 20px 0 20px
+    padding: 0px 20px 0 20px
+ .information__logo
+   margin: 20px   
  .information__logo img
    width: 136px
    height: 65px
@@ -115,8 +118,18 @@ a
  .information__text
    font-size: 12px 
    line-height: 16.8px
+ .information__center-line
+  border-left:none
+  border-bottom: 1px solid rgba(242, 242, 242, 1)
+  margin-top: 12px
+  width: 232px
+  margin-left: 20px
+  
  .information__contacts
    padding-left: 20px 
+   padding-bottom: 20px
+ .contact__adress
+   margin: 12px 0 0 0
  .contacts__item
    font-size: 12px 
  .return-button

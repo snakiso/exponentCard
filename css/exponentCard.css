@@ -95,11 +95,12 @@ a {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: logo;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+  margin: 40px 40px 0 0;
 }
 
 .information__logo img {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.12);
   padding: 24px 44px;
 }
 
@@ -126,7 +127,7 @@ a {
   margin-top: 12px;
 }
 
-.contacts__item p {
+.contact__adress {
   color: #767676;
   line-height: 24px;
   margin: 24px 0 0 0;
@@ -157,12 +158,15 @@ a {
     margin: 55px 0 0 0;
     display: -ms-grid;
     display: grid;
-        grid-template-areas: "logo" 'number' 'text' 'contacts';
+        grid-template-areas: "logo" 'number' 'text' 'center' 'contacts';
     -webkit-box-shadow: 0px 60px 0px 24px #f2f2f2;
             box-shadow: 0px 60px 0px 24px #f2f2f2;
   }
   .exponent-card__information {
-    padding: 12px 20px 0 20px;
+    padding: 0px 20px 0 20px;
+  }
+  .information__logo {
+    margin: 20px;
   }
   .information__logo img {
     width: 136px;
@@ -181,8 +185,18 @@ a {
     font-size: 12px;
     line-height: 16.8px;
   }
+  .information__center-line {
+    border-bottom: 1px solid #f2f2f2;
+    margin-top: 12px;
+    width: 232px;
+    margin-left: 20px;
+  }
   .information__contacts {
     padding-left: 20px;
+    padding-bottom: 20px;
+  }
+  .contact__adress {
+    margin: 12px 0 0 0;
   }
   .contacts__item {
     font-size: 12px;
