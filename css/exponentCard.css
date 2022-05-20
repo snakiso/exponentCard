@@ -83,12 +83,12 @@ a {
 }
 
 .information__center-line {
+  margin: 40px 0;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: center;
   border-left: 1px solid #f2f2f2;
-  margin: 0;
   padding: 0 40px 0 0;
 }
 
